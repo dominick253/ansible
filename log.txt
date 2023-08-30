@@ -1,0 +1,788 @@
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.71.71.214]
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.134]
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.214]
+ok: [10.71.71.168]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.214]
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.168]
+skipping: [10.71.71.214]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.71.71.111]
+ok: [10.71.71.214]
+ok: [10.71.71.115]
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.168]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.214]
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.134]
+ok: [10.71.71.168]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.115]
+ok: [10.71.71.214]
+ok: [10.71.71.111]
+ok: [10.71.71.168]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.168]
+skipping: [10.71.71.214]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.71.71.115]
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.214]
+ok: [10.71.71.111]
+ok: [10.71.71.168]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.134]
+ok: [10.71.71.214]
+ok: [10.71.71.111]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.214]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.168]
+skipping: [10.71.71.214]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.168]
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.214]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.134]
+ok: [10.71.71.168]
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.214]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.168]
+ok: [10.71.71.115]
+ok: [10.71.71.111]
+ok: [10.71.71.214]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.168]
+skipping: [10.71.71.214]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.168]
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.214]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.134]
+ok: [10.71.71.168]
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.214]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.168]
+ok: [10.71.71.115]
+ok: [10.71.71.111]
+ok: [10.71.71.214]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.168]
+skipping: [10.71.71.214]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+===== Job Started at Sun Aug 20 17:20:01 UTC 2023 =====
+/bin/bash: line 1: r/local/bin/ansible-playbook: No such file or directory
+===== Job Started at Sun Aug 20 17:22:01 UTC 2023 =====
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.71.71.111]
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.214]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.111]
+ok: [10.71.71.134]
+ok: [10.71.71.168]
+ok: [10.71.71.115]
+ok: [10.71.71.214]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.214]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.214]
+skipping: [10.71.71.168]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+===== Job Started at Mon Aug 21 01:00:01 UTC 2023 =====
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.214]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.134]
+ok: [10.71.71.214]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.214]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.168]
+skipping: [10.71.71.214]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+===== Job Started at Tue Aug 22 01:00:01 UTC 2023 =====
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.71.71.115]
+ok: [10.71.71.111]
+ok: [10.71.71.214]
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.168]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.134]
+ok: [10.71.71.214]
+ok: [10.71.71.115]
+ok: [10.71.71.111]
+ok: [10.71.71.168]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.214]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.168]
+skipping: [10.71.71.214]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+===== Job Started at Wed Aug 23 01:00:01 UTC 2023 =====
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.214]
+ok: [10.71.71.115]
+ok: [10.71.71.111]
+ok: [10.71.71.168]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.134]
+ok: [10.71.71.115]
+ok: [10.71.71.111]
+ok: [10.71.71.214]
+ok: [10.71.71.168]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.168]
+ok: [10.71.71.115]
+ok: [10.71.71.111]
+ok: [10.71.71.214]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.214]
+skipping: [10.71.71.168]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+===== Job Started at Thu Aug 24 01:00:01 UTC 2023 =====
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.214]
+ok: [10.71.71.172]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.134]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.214]
+ok: [10.71.71.111]
+ok: [10.71.71.172]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.214]
+ok: [10.71.71.111]
+ok: [10.71.71.172]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.168]
+skipping: [10.71.71.214]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+skipping: [10.71.71.172]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.172               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+===== Job Started at Fri Aug 25 01:00:01 UTC 2023 =====
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.214]
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.172]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.214]
+ok: [10.71.71.115]
+ok: [10.71.71.134]
+ok: [10.71.71.111]
+ok: [10.71.71.168]
+ok: [10.71.71.172]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.214]
+ok: [10.71.71.168]
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.172]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.168]
+skipping: [10.71.71.214]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+skipping: [10.71.71.172]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.172               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+===== Job Started at Sat Aug 26 01:00:01 UTC 2023 =====
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.214]
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.172]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.111]
+ok: [10.71.71.134]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.214]
+ok: [10.71.71.172]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.168]
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.214]
+ok: [10.71.71.172]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.168]
+skipping: [10.71.71.214]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+skipping: [10.71.71.172]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.172               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+===== Job Started at Sun Aug 27 01:00:01 UTC 2023 =====
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.214]
+ok: [10.71.71.168]
+ok: [10.71.71.172]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.134]
+ok: [10.71.71.214]
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.172]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.172]
+ok: [10.71.71.214]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.214]
+skipping: [10.71.71.168]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+skipping: [10.71.71.172]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.172               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+===== Job Started at Mon Aug 28 01:00:01 UTC 2023 =====
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.214]
+ok: [10.71.71.115]
+ok: [10.71.71.111]
+ok: [10.71.71.168]
+ok: [10.71.71.172]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.134]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.214]
+ok: [10.71.71.111]
+ok: [10.71.71.172]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.214]
+ok: [10.71.71.172]
+changed: [10.71.71.168]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.168]
+skipping: [10.71.71.214]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+skipping: [10.71.71.172]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.172               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+===== Job Started at Tue Aug 29 01:00:01 UTC 2023 =====
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.214]
+fatal: [10.71.71.131]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.71.71.131 port 22: Connection refused", "unreachable": true}
+ok: [10.71.71.168]
+ok: [10.71.71.115]
+ok: [10.71.71.111]
+ok: [10.71.71.172]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.115]
+ok: [10.71.71.134]
+ok: [10.71.71.214]
+ok: [10.71.71.111]
+ok: [10.71.71.168]
+ok: [10.71.71.172]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.115]
+ok: [10.71.71.111]
+ok: [10.71.71.214]
+ok: [10.71.71.168]
+ok: [10.71.71.172]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.168]
+skipping: [10.71.71.214]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+skipping: [10.71.71.172]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.131               : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.172               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+
+===== Job Started at Wed Aug 30 01:00:01 UTC 2023 =====
+
+PLAY [Update Servers] **********************************************************
+
+TASK [Gathering Facts] *********************************************************
+[WARNING]: Platform linux on host 10.71.71.134 is using the discovered Python
+interpreter at /usr/bin/python, but future installation of another Python
+interpreter could change the meaning of that path. See https://docs.ansible.com
+/ansible/2.10/reference_appendices/interpreter_discovery.html for more
+information.
+ok: [10.71.71.134]
+ok: [10.71.71.111]
+fatal: [10.71.71.131]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: connect to host 10.71.71.131 port 22: Connection refused", "unreachable": true}
+ok: [10.71.71.115]
+ok: [10.71.71.214]
+ok: [10.71.71.168]
+ok: [10.71.71.172]
+
+TASK [Gather facts] ************************************************************
+ok: [10.71.71.134]
+ok: [10.71.71.115]
+ok: [10.71.71.214]
+ok: [10.71.71.111]
+ok: [10.71.71.168]
+ok: [10.71.71.172]
+
+TASK [Update apt cache and upgrade packages (Ubuntu/Debian)] *******************
+skipping: [10.71.71.134]
+[WARNING]: The value "True" (type bool) was converted to "'True'" (type
+string). If this does not look like what you expect, quote the entire value to
+ensure it does not change.
+ok: [10.71.71.111]
+ok: [10.71.71.115]
+ok: [10.71.71.168]
+ok: [10.71.71.214]
+ok: [10.71.71.172]
+
+TASK [Update packages (Alpine)] ************************************************
+skipping: [10.71.71.168]
+skipping: [10.71.71.214]
+skipping: [10.71.71.111]
+skipping: [10.71.71.115]
+skipping: [10.71.71.172]
+changed: [10.71.71.134]
+
+PLAY RECAP *********************************************************************
+10.71.71.111               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.115               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.131               : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+10.71.71.134               : ok=3    changed=1    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.168               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.172               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+10.71.71.214               : ok=3    changed=0    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
+

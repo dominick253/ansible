@@ -1,0 +1,17 @@
+---
+- name: Update Servers
+  hosts: all
+  tasks:
+  
+  - name: Gather facts
+    setup:
+
+  - name: Update apt cache and upgrade packages (Ubuntu/Debian)
+    apt:
+      update_cache: yes
+      upgrade: yes
+    when: ansible_facts['os_family'] == 'Debian'
+
+  - name: Update packages (Alpine)
+    command: apk update && apk upgrade
+    when: ansible_facts['os_family'] == 'Alpine'
